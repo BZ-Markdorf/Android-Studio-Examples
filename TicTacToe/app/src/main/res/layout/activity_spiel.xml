@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jonasotto.tictactoe.SpielActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal|top"
+        android:layout_alignParentRight="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play!"
+            android:id="@+id/title_ingame"
+            android:textSize="40sp"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_1_1"
+                    android:onClick="game_click"/>
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_2_1"
+                    android:onClick="game_click"/>
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_3_1"
+                    android:onClick="game_click" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_1_2"
+                    android:onClick="game_click" />
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_2_2"
+                    android:onClick="game_click"/>
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_3_2"
+                    android:onClick="game_click" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_1_3"
+                    android:onClick="game_click" />
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_2_3"
+                    android:onClick="game_click"/>
+
+                <Button
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:text=""
+                    android:id="@+id/button_3_3"
+                    android:onClick="game_click" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+            android:id="@+id/textViewSpieler"
+            android:textColor="@color/spieler1"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
