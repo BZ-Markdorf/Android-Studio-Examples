@@ -10,12 +10,30 @@
     tools:context="com.jonasotto.tictactoe.SpielEndeActivity">
 
     <TextView
+        android:id="@+id/textViewGewinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textViewGewinner"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/buttonNeuesSpiel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="neuesSpiel"
+        android:text="Neues Spiel"/>
+
+    <Button
+        android:id="@+id/buttonHauptMenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonNeuesSpiel"
+        android:layout_centerHorizontal="true"
+        android:onClick="hauptmenue"
+        android:text="Hauptmenü"/>
 </RelativeLayout>
