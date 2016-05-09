@@ -1,13 +1,12 @@
 package com.jonasotto.tictactoe;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SpielActivity extends AppCompatActivity {
 
@@ -81,10 +80,10 @@ public class SpielActivity extends AppCompatActivity {
 
         aktiverSpieler = (aktiverSpieler + 1) % 2; //Nächster Spieler
         textViewSpieler.setText("Spieler " + aktiverSpieler); //Anzeige für aktuellen Spieler aktualisieren
-        if (aktiverSpieler == 1)
-            textViewSpieler.setTextColor(ContextCompat.getColor(this, R.color.spieler1));   //Farbe der Anzeige festlegen
+        if (aktiverSpieler == 0)
+            textViewSpieler.setTextColor(ContextCompat.getColor(this, R.color.spieler0));   //Farbe der Anzeige festlegen
         else
-            textViewSpieler.setTextColor(ContextCompat.getColor(this, R.color.spieler2));
+            textViewSpieler.setTextColor(ContextCompat.getColor(this, R.color.spieler1));
     }
 
 
@@ -104,7 +103,7 @@ public class SpielActivity extends AppCompatActivity {
 
     boolean spielGleichstand() {
         //Überprüft, ob ein Gleichstand vorliegt
-        if ((!spielEnde()) && ((!button_1_1.getText().equals("")) &&
+        return (!spielEnde()) && ((!button_1_1.getText().equals("")) &&
                 (!button_1_2.getText().equals("")) &&
                 (!button_1_3.getText().equals("")) &&
                 (!button_2_1.getText().equals("")) &&
@@ -112,10 +111,6 @@ public class SpielActivity extends AppCompatActivity {
                 (!button_2_3.getText().equals("")) &&
                 (!button_3_1.getText().equals("")) &&
                 (!button_3_2.getText().equals("")) &&
-                (!button_3_3.getText().equals("")))) {
-            return true;
-        } else {
-            return false;
-        }
+                (!button_3_3.getText().equals("")));
     }
 }

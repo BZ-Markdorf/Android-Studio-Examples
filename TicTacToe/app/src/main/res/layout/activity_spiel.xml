@@ -10,20 +10,20 @@
     tools:context="com.jonasotto.tictactoe.SpielActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:gravity="center_horizontal|top"
-        android:layout_alignParentRight="true">
+        android:orientation="vertical">
 
 
         <TextView
+            android:id="@+id/title_ingame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Play!"
-            android:id="@+id/title_ingame"
             android:textSize="40sp"/>
 
         <TableLayout
@@ -36,25 +36,25 @@
                 android:layout_height="fill_parent">
 
                 <Button
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:text=""
                     android:id="@+id/button_1_1"
-                    android:onClick="game_click"/>
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_2_1"
-                    android:onClick="game_click"/>
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_3_1"
-                    android:onClick="game_click" />
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    android:text=""/>
             </TableRow>
 
             <TableRow
@@ -62,25 +62,25 @@
                 android:layout_height="fill_parent">
 
                 <Button
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:text=""
                     android:id="@+id/button_1_2"
-                    android:onClick="game_click" />
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_2_2"
-                    android:onClick="game_click"/>
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_3_2"
-                    android:onClick="game_click" />
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    android:text=""/>
             </TableRow>
 
             <TableRow
@@ -88,36 +88,36 @@
                 android:layout_height="fill_parent">
 
                 <Button
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:text=""
                     android:id="@+id/button_1_3"
-                    android:onClick="game_click" />
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_2_3"
-                    android:onClick="game_click"/>
-
-                <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:text=""
+                    android:onClick="game_click"
+                    android:text=""/>
+
+                <Button
                     android:id="@+id/button_3_3"
-                    android:onClick="game_click" />
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    android:text=""/>
             </TableRow>
         </TableLayout>
 
         <TextView
+            android:id="@+id/textViewSpieler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player 1"
-            android:id="@+id/textViewSpieler"
+            android:layout_marginTop="20sp"
+            android:text="Spieler 0"
             android:textColor="@color/spieler1"
-            android:textSize="25sp"
-            android:layout_marginTop="20sp"/>
+            android:textSize="25sp"/>
 
 
     </LinearLayout>
