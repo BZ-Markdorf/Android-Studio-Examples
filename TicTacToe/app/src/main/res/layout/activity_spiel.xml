@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:text="Spieler 0"
-            android:textColor="@color/spieler1"
+            android:textColor="@color/spieler0"
             android:textSize="25sp"/>
 
 

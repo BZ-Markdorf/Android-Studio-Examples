@@ -27,11 +27,11 @@ public class SpielEndeActivity extends AppCompatActivity {
                 break;
             case 0:
                 textViewGewinner.setText("X hat gewonnen!");
-                textViewGewinner.setTextColor(ContextCompat.getColor(this, R.color.spieler1));
+                textViewGewinner.setTextColor(ContextCompat.getColor(this, R.color.spieler0));
                 break;
             case 1:
                 textViewGewinner.setText("O hat gewonnen!");
-                textViewGewinner.setTextColor(ContextCompat.getColor(this, R.color.spieler2));
+                textViewGewinner.setTextColor(ContextCompat.getColor(this, R.color.spieler1));
                 break;
         }
     }

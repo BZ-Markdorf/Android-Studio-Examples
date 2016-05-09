@@ -48,14 +48,14 @@ public class SpielActivity extends AppCompatActivity {
             case 0: //Spieler X/1 am Zug
                 if (button.getText().equals("")) {  //Wenn das Feld frei ist...
                     button.setText("X");    //Feld auf X setzen
-                    button.setTextColor(ContextCompat.getColor(this, R.color.spieler1));    //Farbe für Spieler 0 aus den Ressourcen laden, auf button anwenden
+                    button.setTextColor(ContextCompat.getColor(this, R.color.spieler0));    //Farbe für Spieler 0 aus den Ressourcen laden, auf button anwenden
                 }
                 break;
 
             case 1: //Spieler O/2 am Zug
                 if (button.getText().equals("")) { //Wenn das Feld frei ist...
                     button.setText("O");    //Feld auf O setzen
-                    button.setTextColor(ContextCompat.getColor(this, R.color.spieler2));    //Farbe für Spieler 1 aus den Ressourcen laden, auf button anwenden
+                    button.setTextColor(ContextCompat.getColor(this, R.color.spieler1));    //Farbe für Spieler 1 aus den Ressourcen laden, auf button anwenden
                 }
                 break;
         }
