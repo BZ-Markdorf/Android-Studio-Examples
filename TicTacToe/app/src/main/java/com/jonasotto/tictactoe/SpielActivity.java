@@ -90,22 +90,16 @@ public class SpielActivity extends AppCompatActivity {
 
     boolean spielEnde() {
         //Überprüft, ob das Spiel gewonnen ist, jedoch nicht, wer gewonnen hat
-        if ((button_1_1.getText().equals(button_1_2.getText()) && button_1_2.getText().equals(button_1_3.getText()) && !button_1_1.getText().equals("") && !button_1_2.getText().equals("") && !button_1_3.getText().equals("")) ||
-                (button_2_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_2_3.getText()) && !button_2_1.getText().equals("") && !button_2_2.getText().equals("") && !button_2_3.getText().equals("")) ||
-                (button_3_1.getText().equals(button_3_2.getText()) && button_3_2.getText().equals(button_3_3.getText()) && !button_3_1.getText().equals("") && !button_3_2.getText().equals("") && !button_3_3.getText().equals("")) ||
+        return ((button_1_1.getText().equals(button_1_2.getText()) && button_1_2.getText().equals(button_1_3.getText()) && !button_1_1.getText().equals("")) ||     //Spalte 1 gleich und nicht leer
+                (button_2_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_2_3.getText()) && !button_2_1.getText().equals("")) || //Spalte 2 gleich und nicht leer
+                (button_3_1.getText().equals(button_3_2.getText()) && button_3_2.getText().equals(button_3_3.getText()) && !button_3_1.getText().equals("")) || //Spalte 3 gleich und nicht leer
 
+                (button_1_1.getText().equals(button_2_1.getText()) && button_2_1.getText().equals(button_3_1.getText()) && !button_1_1.getText().equals("")) || //Zeile 1 gleich und nicht leer
+                (button_1_2.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_3_2.getText()) && !button_1_2.getText().equals("")) || //Zeile 2 gleich und nicht leer
+                (button_1_3.getText().equals(button_2_3.getText()) && button_2_3.getText().equals(button_3_3.getText()) && !button_1_3.getText().equals("")) || //Zeile 3 gleich und nicht leer
 
-                (button_1_1.getText().equals(button_2_1.getText()) && button_2_1.getText().equals(button_3_1.getText()) && !button_1_1.getText().equals("") && !button_2_1.getText().equals("") && !button_3_1.getText().equals("")) ||
-                (button_1_2.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_3_2.getText()) && !button_1_2.getText().equals("") && !button_2_2.getText().equals("") && !button_3_2.getText().equals("")) ||
-                (button_1_3.getText().equals(button_2_3.getText()) && button_2_3.getText().equals(button_3_3.getText()) && !button_1_3.getText().equals("") && !button_2_3.getText().equals("") && !button_3_3.getText().equals("")) ||
-
-
-                (button_1_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_3_3.getText()) && !button_1_1.getText().equals("") && !button_2_2.getText().equals("") && !button_3_3.getText().equals("")) ||
-                (button_3_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_1_3.getText()) && !button_3_1.getText().equals("") && !button_2_2.getText().equals("") && !button_1_3.getText().equals(""))) {
-            return true;
-        } else {
-            return false;
-        }
+                (button_1_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_3_3.getText()) && !button_1_1.getText().equals("")) || //Diagonale gleich und nicht leer
+                (button_3_1.getText().equals(button_2_2.getText()) && button_2_2.getText().equals(button_1_3.getText()) && !button_3_1.getText().equals(""))); //2. Diagonale gleich und nicht leer
     }
 
     boolean spielGleichstand() {
