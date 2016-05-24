@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jonasotto.tictactoe.SpielActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.jonasotto.tictactoe.SpielActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -36,77 +36,77 @@
                 android:layout_height="fill_parent">
 
                 <Button
+                    android:id="@+id/button_0_0"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    />
+
+                <Button
+                    android:id="@+id/button_1_0"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    />
+
+                <Button
+                    android:id="@+id/button_2_0"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/button_0_1"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    />
+
+                <Button
                     android:id="@+id/button_1_1"
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:onClick="game_click"
-                    android:text=""/>
+                    />
 
                 <Button
                     android:id="@+id/button_2_1"
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:onClick="game_click"
-                    android:text=""/>
-
-                <Button
-                    android:id="@+id/button_3_1"
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:onClick="game_click"
-                    android:text=""/>
+                    />
             </TableRow>
 
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/button_0_2"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:onClick="game_click"
+                    />
 
                 <Button
                     android:id="@+id/button_1_2"
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:onClick="game_click"
-                    android:text=""/>
+                    />
 
                 <Button
                     android:id="@+id/button_2_2"
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:onClick="game_click"
-                    android:text=""/>
-
-                <Button
-                    android:id="@+id/button_3_2"
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:onClick="game_click"
-                    android:text=""/>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <Button
-                    android:id="@+id/button_1_3"
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:onClick="game_click"
-                    android:text=""/>
-
-                <Button
-                    android:id="@+id/button_2_3"
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:onClick="game_click"
-                    android:text=""/>
-
-                <Button
-                    android:id="@+id/button_3_3"
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
-                    android:onClick="game_click"
-                    android:text=""/>
+                    />
             </TableRow>
         </TableLayout>
 
