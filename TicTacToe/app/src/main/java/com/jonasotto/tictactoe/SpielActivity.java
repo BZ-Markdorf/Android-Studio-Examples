@@ -103,7 +103,7 @@ public class SpielActivity extends AppCompatActivity {
             if (i == spielfeld.length - 1)              //Spiel ist gewonnen da alle Felder geprüft wurden und jedes dem aktuellen Spieler gehören
                 return true;
         }
-        if (x == y) {
+        if (x == y) {                                   //Auf Diagonalen
             for (int i = 0; i < spielfeld.length; i++) {//Alle Felder der Diagonalen
                 if (spielfeld[i][i] != aktiverSpieler)  //Abbrechen sobald ein Feld der Reihe nicht dem aktuellen Spieler gehört
                     break;
