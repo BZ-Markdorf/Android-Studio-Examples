@@ -21,7 +21,7 @@ public class SpielActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spiel);
 
-
+        initSpielfeld();
         textViewSpieler = (TextView) findViewById(R.id.textViewSpieler);
     }
 
@@ -110,5 +110,13 @@ public class SpielActivity extends AppCompatActivity {
                 return true;
         }
         return false;
+    }
+
+    private void initSpielfeld() {
+        for (int i = 0; i < spielfeld.length; i++) {
+            for (int b = 0; b < spielfeld[i].length; b++) {
+                spielfeld[i][b] = -1;
+            }
+        }
     }
 }
