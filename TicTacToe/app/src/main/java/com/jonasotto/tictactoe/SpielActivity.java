@@ -73,12 +73,16 @@ public class SpielActivity extends AppCompatActivity {
 
 
     private int getXCoordinate(Button button) {
-        return Integer.parseInt(button.getText().toString().substring(7, 8));
+        String id = button.getResources().getResourceName(button.getId());
+        id = id.substring(id.indexOf('/') + 1);
+        return Integer.parseInt(id.substring(7, 8));
 
     }
 
     private int getYCoordinate(Button button) {
-        return Integer.parseInt(button.getText().toString().substring(9, 10));
+        String id = button.getResources().getResourceName(button.getId());
+        id = id.substring(id.indexOf('/') + 1);
+        return Integer.parseInt(id.substring(9, 10));
     }
 
 
