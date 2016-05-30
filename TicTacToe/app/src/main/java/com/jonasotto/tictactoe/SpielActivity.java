@@ -55,7 +55,7 @@ public class SpielActivity extends AppCompatActivity {
                 finish();   //Aktuelle Activity beenden
             }
 
-            if (anzahlSpielzuege == 9) {    //Spiel ist nicht gewonnen und der 9. Spielzug wurde gespielt, also ist das Spiel unentschieden
+            if (anzahlSpielzuege >= 8) {    //Spiel wurde mit dem 9. Zug nicht beendet, also ist das Spiel unentschieden
                 Intent spielEnde = new Intent(SpielActivity.this, SpielEndeActivity.class); //Neuer Intent um SpielEndeActivity zu starten
                 Bundle optionen = new Bundle(); //Neue Optionen
                 optionen.putInt("gewinner", -1); //Wert "gewinner" in Optionen auf -1 (kein Gewinner, Gleichstand)festlegen
