@@ -53,6 +53,7 @@ public class SpielActivity extends AppCompatActivity {
                 spielEnde.putExtras(optionen);  //Optionen an Intent anhängen
                 startActivity(spielEnde);   //Intent ausführen, neue Activity SpielEndeActivity starten
                 finish();   //Aktuelle Activity beenden
+                return;
             }
 
             if (anzahlSpielzuege >= 8) {    //Spiel wurde mit dem 9. Zug nicht beendet, also ist das Spiel unentschieden
@@ -62,6 +63,7 @@ public class SpielActivity extends AppCompatActivity {
                 spielEnde.putExtras(optionen);  //Optionen an Intent anhängen
                 startActivity(spielEnde);   //Intent ausführen, neue Activity SpielEndeActivity starten
                 finish();   //Aktuelle Activity beenden
+                return;
             }
 
             aktiverSpieler = (aktiverSpieler + 1) % 2; //Nächster Spieler
@@ -75,12 +77,10 @@ public class SpielActivity extends AppCompatActivity {
         }
     }
 
-
     private int getXCoordinate(Button button) {
         String id = button.getResources().getResourceName(button.getId());  //Gibt die id des Buttons im Format "com.jonasotto.tictactoe:id/button_1_1" zurück
         id = id.substring(id.indexOf('/') + 1); //Entfernt den package Namen, id ist jetzt z.B. "button_1_1"
         return Integer.parseInt(id.substring(7, 8));
-
     }
 
     private int getYCoordinate(Button button) {
